@@ -10,10 +10,13 @@ public class Pedido{
     public void adicionarObservador(Observador o){
         observadores.add(o);
     }
+    public void removerObservador(Observador o) {
+        observadores.remove(o);
+    }
     public void atualizarStatus(String mensagem){
         status = mensagem;
     }
-    public void notificarTotos(){
+    public void notificarTodos(){
         for(Observador o : observadores){
             o.atualizar("Satus do pedido: " + status);
         }

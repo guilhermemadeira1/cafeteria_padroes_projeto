@@ -1,12 +1,12 @@
 package com.cafeteria.bebidas;
 
-public class Chocolate extends Bebida{
+public class Chocolate implements Bebida {
     @Override
-    public String getDescricao(){
-        return "Chocolate";
+    public String getDescricao() {
+        return "chocolate";
     }
     @Override
-    public double getPreco(){
-        return 6.00;
+    public double getPreco() {
+        return 6.0;
     }
 }

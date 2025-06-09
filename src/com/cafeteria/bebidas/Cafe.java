@@ -1,6 +1,6 @@
 package com.cafeteria.bebidas;
 
-public class Cafe extends Bebida{
+public class Cafe implements Bebida{
     @Override
     public String getDescricao(){
         return "Café";
