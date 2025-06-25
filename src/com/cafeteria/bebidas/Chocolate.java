@@ -3,7 +3,7 @@ package com.cafeteria.bebidas;
 public class Chocolate implements Bebida {
     @Override
     public String getDescricao() {
-        return "chocolate";
+        return "Chocolate";
     }
     @Override
     public double getPreco() {

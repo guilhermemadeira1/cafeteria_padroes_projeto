@@ -3,6 +3,8 @@ package com.cafeteria.notificacao;
 public class Cliente implements Observador{
     private String nome;
 
+    public Cliente(){}
+
     public Cliente(String nome){
         this.nome = nome;
     }
@@ -14,6 +16,6 @@ public class Cliente implements Observador{
     }
     @Override
     public void atualizar(String mensagem){
-        System.out.println("Cliente \""+nome+"\" notificado: "+mensagem);
+        System.out.println("Cliente \""+nome+"\" notificado: \""+mensagem+"\"");
     }
 }
